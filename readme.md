@@ -55,3 +55,5 @@ The kerenl divides the I2C Subsystem by Buses and Devices. Buses again divide in
 5. Driver ready to communicate
 6. remove the device once done with it
 
+https://embetronicx.com/tutorials/linux/device-drivers/i2c-linux-device-driver-using-raspberry-pi/
+https://embetronicx.com/tutorials/linux/device-drivers/i2c-linux-device-driver-using-raspberry-pi/#Driver_Source_Code
