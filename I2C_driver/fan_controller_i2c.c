@@ -38,8 +38,8 @@ static struct i2c_driver fan_controller_driver = {
         .name = "Fan_Controller",
         .owner = THIS_MODULE, 
     },
-    .probe = gpio_expander_probe,
-    .remove = gpio_expander_remove,
+    .probe = fan_controller_probe,
+    .remove = fan_controller_remove,
     .id_table = fan_controller_id,
 };
 
