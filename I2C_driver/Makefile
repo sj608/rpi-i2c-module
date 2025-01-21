@@ -1,4 +1,4 @@
-obj-m := gpio_expander_i2c.o
+obj-m := fan_controller_i2c.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
