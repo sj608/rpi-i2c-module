@@ -1,7 +1,10 @@
+KDIR = /lib/modules/$(shell uname -r)/build
 obj-m := hello_module.o
+# Adding debug flag while building, enables the pr_debug() function
+CFLAGS_hello_module.o:= -DDEBUG 
 
 all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+	make -C $(KDIR) M=$(PWD) modules
 
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+	make -C $(KDIR) M=$(PWD) clean
